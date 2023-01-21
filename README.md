@@ -9,4 +9,5 @@ This project will be a team project
    
    
    
-
+<!-- To pull from the main -->
+<!-- #git pull --rebase origin main -->
