@@ -11,3 +11,9 @@ This project will be a team project
    
 <!-- To pull from the main -->
 <!-- #git pull --rebase origin main -->
+
+<!-- git fetch origin main && git merge Adekunle -->
+<!-- git merge origin/adekunle -->
+<!-- git commit -->
+<!-- git status -->
+<!-- git push -->
