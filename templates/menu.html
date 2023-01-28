@@ -1,0 +1,38 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{##}
+{#</body>#}
+{#</html>#}
+
+{% extends 'base.html' %}
+
+{% block content %}
+       <div class="text-center">
+    <h1>{% block title %} Welcome to HOME {% endblock %}</h1>
+    {% for menu in menus %}
+        <div class="text-center">
+        <a href="#">
+            <h2>{{ menu['Name'] }}</h2>
+        </a>
+        <a href="#">
+            <h2>${{ menu['price'] }}</h2>
+        </a>
+        <a href="#">
+            <img src="{{ menu['image'] }}" class="w3-border w3-padding"  style="width:50%;max-width:250px" alt="...">
+        </a>
+        </div>
+       <div class="text-center">
+        <span class="badge badge-primary">
+
+        </span>
+       </div>a
+        <hr>
+         </div>
+    {% endfor %}
+
+{% endblock %}
