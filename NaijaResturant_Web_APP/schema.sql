@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS menu_table;
+
+CREATE TABLE menu_table(
+
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+	created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	Name TEXT,
+	price INTEGER,
+    image TEXT,
+    description TEXT
+
+);

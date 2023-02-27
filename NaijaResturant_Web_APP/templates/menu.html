@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} This is our Menu Page  {% endblock %}</h1>
+    <br>
+    {%for food in foodmenu %}
+        <div class="container">
+             <a href="#">
+                <h2>{{ food['Name'] }}</h2>
+            </a>
+             <a href="#">
+                <h2>${{  food['price'] }}</h2>
+            </a>
+             <figure class="figure">
+                 <img src="{{food['image']}}" class="figure-img img-fluid rounded" alt="{{food['Name']}}" width="400"
+                      height="400">
+
+             </figure>
+            <hr>
+
+
+        </div>
+        <br>
+
+
+    {% endfor%}
+{% endblock %}
