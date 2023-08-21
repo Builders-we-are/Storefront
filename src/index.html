@@ -12,3 +12,27 @@
     <script src="bundle.js"></script>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... existing code ... -->
+</head>
+<body>
+    <div>
+        <label for="czmlDropdown">Select a CZML file:</label>
+        <select id="czmlDropdown"></select>
+    </div>
+
+    <!-- Add a file input field for CZML file upload -->
+    <div>
+        <label for="czmlFileInput">Upload a CZML file:</label>
+        <input type="file" id="czmlFileInput">
+        <button id="uploadButton">Upload</button>
+    </div>
+
+    <div id="cesiumContainer" style="width: 100%; height: 600px;"></div>
+    <script src="bundle.js"></script>
+</body>
+</html>
