@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to Home of Nigerian food {% endblock %}</h1>
+    <br>
+    {%for food in foodmenu %}
+        <div class="container">
+
+             <figure class="figure">
+                 <img src="{{food['image']}}" class="figure-img img-fluid rounded" alt="{{food['Name']}}" width="400"
+                      height="400">
+
+             </figure>
+
+        </div>
+
+
+    {% endfor%}
+{% endblock %}
